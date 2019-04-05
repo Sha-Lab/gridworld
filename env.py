@@ -558,7 +558,7 @@ class ComboEnv(EnvWrapper):
 
 # on top of ComboEnv
 class PORGBEnv(EnvWrapper):
-    def __init__(self, env, l=3, vc=False, record=False):
+    def __init__(self, env, l=1, vc=False, record=False):
         super().__init__(env)
         self.row, self.col = self.env.unwrapped.row, self.env.unwrapped.col
         window = self.env.unwrapped.window
