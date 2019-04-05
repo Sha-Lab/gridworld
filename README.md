@@ -23,13 +23,9 @@ This repository implements a multi-task gridworld environment used in the SynPo 
 - Pygame
 
 ## Usage
-To use the PickGridWorld, you need to specify the the set of maps you want to sampled from and the number of objects appear in each map. The task is to pick up a sequence of objects in a specific order.
+To use the GridWorld, you need to specify the the set of maps you want to sampled from and the number of objects appear in each map. The task is to pick up a sequence of objects in a specific order.
 
-To control an agent in a demonstrated gridworld, execute:
-```
-python utest.py TestPickEnv.control
-```
-To get a gridworld env with mask observation, use PickGridWorld. If you want gridworld with RGB observation, use PORGBEnv wrapper. You can specify argument `l` to control the window size around the agent. If `l` is smaller than the radius of the map, the environment will be partially observable.
+To get a gridworld env with mask observation, use GridWorld. If you want gridworld with RGB observation, use PORGBEnv wrapper. You can specify argument `l` to control the window size around the agent. If `l` is smaller than the radius of the map, the environment will be partially observable.
 
 You can also call `env.get_opt_action()` to get the optimal action for the task currently sovling, which can be used easily for imitation learning.
 
