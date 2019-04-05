@@ -14,8 +14,10 @@ from IPython import embed
 from io import StringIO
 from gym import Env, spaces
 from gym.utils import seeding
-
-from .utils import four_directions, discount_cumsum, Render, chunk, extract
+if __package__ == '':
+    from utils import four_directions, discount_cumsum, Render, chunk, extract
+else:
+    from .utils import four_directions, discount_cumsum, Render, chunk, extract
 import matplotlib.pyplot as plt
 from IPython import embed
 
